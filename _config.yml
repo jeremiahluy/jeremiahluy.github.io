@@ -2,6 +2,8 @@
 # This file contains configuration flags to customize your site
 #
 
+theme: midnight
+
 # Name of your site (displayed in the header)
 name: Your Name
 
