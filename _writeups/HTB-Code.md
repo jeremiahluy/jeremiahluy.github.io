@@ -10,12 +10,12 @@ tags: [ssti, pathttrav, sudoers, hashcat]
 
 | Info | Details |
 | ---- | ------- |
-| **IP Address** | 10.10.11.53 |
-| **Difficulty** | 🟠 Medium |
+| **IP Address** | 10.10.11.62 |
+| **Difficulty** | 🟢 Easy |
 | **Exploits** | Server-Side Template Injection, Path Traversal |
 | **Tools Used** | `hashcat` |
 | **Techniques Used** | SSH Tunneling, Sudoers |
-| **Interesting Files** | `/var/log/apache2/access.log` |
+| **Interesting Files** |  |
 
 #### Port Scan Results:
 
