@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HackTheBox - Cat - Write-up
+tags: [xss, sqli, git-dumper, sqlmap, swaks, sshtun]
 ---
 ***
 
