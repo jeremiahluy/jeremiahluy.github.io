@@ -9,7 +9,7 @@ Quick Info:
 | Difficulty | :orange_book: Medium |
 | Exploits | Cross-Site Scripting, SQL Injection |
 | Tools Used | `git-dumper`, `sqlmap`, `swaks` |
-| Techniques Used | SSH Port Forward |
+| Techniques Used | SSH Tunneling |
 | Interesting Files | `/var/log/apache2/access.log` |
 
 Port Scan Results:
