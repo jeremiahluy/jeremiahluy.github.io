@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[HTB] Code"
-difficulty: easy
+difficulty: Easy
 tags: [ssti, pathttrav, sudoers, hashcat]
 status: Un-released
 ---
