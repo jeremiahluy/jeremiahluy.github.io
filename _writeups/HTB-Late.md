@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [HTB] Late
+title: "[HTB] Late"
 difficulty: easy
 tags: [ssti]
 status: Complete
