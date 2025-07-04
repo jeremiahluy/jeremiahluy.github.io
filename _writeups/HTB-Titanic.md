@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[HTB] Titanic"
-difficulty: easy
+difficulty: Easy
 tags: [path_traversal, lfi, hashcat]
 status: Complete
 ---
