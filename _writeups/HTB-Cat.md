@@ -2,6 +2,7 @@
 layout: post
 title: "[HTB] Cat"
 tags: [xss, sqli, git-dumper, sqlmap, swaks, sshtun]
+difficulty: Medium
 status: Un-released
 ---
 ***
