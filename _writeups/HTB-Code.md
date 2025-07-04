@@ -2,8 +2,9 @@
 layout: post
 title: "[HTB] Code"
 difficulty: Easy
-tags: [ssti, pathttrav, sudoers, hashcat]
+tags: [ssti, path-traversal, sudoers, hashcat]
 status: Un-released
+updated_date: 2025-07-02
 ---
 ***
 
