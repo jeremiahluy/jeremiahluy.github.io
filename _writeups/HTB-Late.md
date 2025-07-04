@@ -2,7 +2,7 @@
 layout: post
 title: HackTheBox - Late - Write-up
 difficulty: easy
-tags: [ssti, hashcat]
+tags: [ssti]
 ---
 ***
 
@@ -52,7 +52,7 @@ def result():
 {% raw %}
 In Flask, the `render_template` function allows us to evaluate expressions using the `{{ ... }}` syntax. For example, mathematical expressions such as `{{7*7}}` would be evaluated and would result in an output of `49`. We can use this technique to execute code using the Flask engine.
 
-We can create and image that simply says: `{{7*7}}`, and just as we thought, it gave us the following response, confirming the Server-Site Template Injection:
+We can create and image that simply says: `{{7*7}}`, and just as we thought, it gave us the following response, confirming the Server-Side Template Injection:
 
 ``` html
 <p>49
