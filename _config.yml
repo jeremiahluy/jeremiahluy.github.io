@@ -20,6 +20,9 @@ collections:
   writeups:
     output: true
     permalink: /writeups/:title/
+  tags:
+    output: true
+    permalink: /tags/:name/
 
 # You might also want to set default layouts for each collection
 defaults:
@@ -33,6 +36,11 @@ defaults:
       type: "writeups"
     values:
       layout: "post" # "writeup" Or a custom layout like "page"
+  - scope:
+      path: ""
+      type: "tags"
+    values:
+      layout: "tag_page"
 
 #
 # Flags below are optional
