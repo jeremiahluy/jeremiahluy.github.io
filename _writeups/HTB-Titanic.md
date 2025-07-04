@@ -2,8 +2,9 @@
 layout: post
 title: "[HTB] Titanic"
 difficulty: Easy
-tags: [path_traversal, lfi, hashcat]
+tags: [path-traversal, lfi, hashcat]
 status: Complete
+updated_date: 2025-07-03
 ---
 ***
 
