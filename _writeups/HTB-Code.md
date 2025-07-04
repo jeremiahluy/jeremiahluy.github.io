@@ -1,8 +1,9 @@
 ---
 layout: post
-title: HackTheBox - Code - Write-up
+title: "[HTB] Code"
 difficulty: easy
 tags: [ssti, pathttrav, sudoers, hashcat]
+status: Un-released
 ---
 ***
 
