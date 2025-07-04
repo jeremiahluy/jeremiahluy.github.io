@@ -1,8 +1,9 @@
 ---
 layout: post
-title: HackTheBox - Titanic - Write-up
+title: "[HTB] Titanic"
 difficulty: easy
 tags: [path_traversal, lfi, hashcat]
+status: Complete
 ---
 ***
 
