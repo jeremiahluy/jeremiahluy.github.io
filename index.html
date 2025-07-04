@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.writeups %}
+  {% assign sorted_writeups = site.writeups | sort: "updated_date" | reversed %}
+  {% for post in sorted_writeups %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
