@@ -1,8 +1,9 @@
 ---
 layout: post
-title: HackTheBox - Late - Write-up
+title: [HTB] Late
 difficulty: easy
 tags: [ssti]
+status: Complete
 ---
 ***
 
