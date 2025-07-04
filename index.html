@@ -7,12 +7,12 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        {% if post.difficulty %}
+          <span class="difficulty">Difficulty: <strong>{{ post.difficulty }}</strong></span>
+        {% endif %}
+        {% if post.status %}
+          <span class="status">Status: <strong>{{ post.status }}</strong></span>
+        {% endif %}
     </article>
   {% endfor %}
 </div>
