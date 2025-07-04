@@ -2,7 +2,7 @@
 layout: post
 title: HackTheBox - Titanic - Write-up
 difficulty: easy
-tags: [lfi, hashcat]
+tags: [path_traversal, lfi, hashcat]
 ---
 ***
 
