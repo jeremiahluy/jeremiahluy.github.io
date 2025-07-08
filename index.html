@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% assign sorted_writeups = site.writeups | sort: "updated_date" %}
+  {% assign sorted_writeups = site.writeups | sort: "updated_date" | reverse %}
   {% for post in sorted_writeups %}
     {% unless post.status == "Un-released" %}
       <article class="post">
@@ -22,9 +22,6 @@ layout: default
                 <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
               {% endfor %}
             </div>
-          {% endif %}
-          {% if post.status %}
-            ###### <div class="updated">Updated: {{ post.updated_date }}</div>
           {% endif %}
       </article>
     {% endunless %}
