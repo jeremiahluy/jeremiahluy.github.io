@@ -5,23 +5,28 @@ layout: default
 <div class="posts">
   {% assign sorted_writeups = site.writeups | sort: "updated_date" %}
   {% for post in sorted_writeups %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-        {% if post.difficulty %}
-          <div class="difficulty">Difficulty: <strong>{{ post.difficulty }}</strong></div>
-        {% endif %}
-        {% if post.status %}
-          <div class="status">Status: <strong>{{ post.status }}</strong></div>
-        {% endif %}
-        {% if post.tags.size > 0 %}
-          <div class="tags-list">
-            Tags:
-            {% for tag in post.tags %}
-              <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          </div>
-        {% endif %}
-    </article>
+    {% unless post.status == "Un-released" %}
+      <article class="post">
+  
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+          {% if post.difficulty %}
+            <div class="difficulty">Difficulty: <strong>{{ post.difficulty }}</strong></div>
+          {% endif %}
+          {% if post.status %}
+            <div class="status">Status: <strong>{{ post.status }}</strong></div>
+          {% endif %}
+          {% if post.tags.size > 0 %}
+            <div class="tags-list">
+              Tags:
+              {% for tag in post.tags %}
+                <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if post.status %}
+            ###### <div class="updated">Updated: {{ post.updated_date }}</div>
+          {% endif %}
+      </article>
+    {% endunless %}
   {% endfor %}
 </div>
