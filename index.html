@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% assign sorted_writeups = site.writeups | sort: "updated_date" | reversed %}
+  {% assign sorted_writeups = site.writeups | sort: "updated_date" %}
   {% for post in sorted_writeups %}
     <article class="post">
 
